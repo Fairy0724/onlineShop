@@ -1,0 +1,239 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "xy",
+      "password": "123456",
+      "email": "test@example.com",
+      "phone": "13800138000",
+      "avatar": "https://picsum.photos/seed/user1/200/200",
+      "createTime": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "title": "夏季特惠",
+      "description": "全场满200减50，限时特惠",
+      "imageUrl": "https://www.chanel.cn/puls-img/c_limit,w_2880/q_auto:good,dpr_auto,f_auto/1744097455114-chancehpcorpotakeoverwwdesktopjpg_1260x2880.jpg",
+      "link": "#",
+      "buttonText": "立即抢购",
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "title": "新品上市",
+      "description": "全新系列，焕新上市",
+      "imageUrl": "https://www.chanel.cn/puls-img/c_limit,w_3200/q_auto:good,dpr_auto,f_auto/1742562149976-homepagecorpoonedesktopjpg_3240x5760.jpg",
+      "link": "#",
+      "buttonText": "查看详情",
+      "sortOrder": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "护肤水",
+      "imageUrl": "https://picsum.photos/seed/toner/100/100",
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "name": "精华液",
+      "imageUrl": "https://picsum.photos/seed/serum/100/100",
+      "sortOrder": 2
+    },
+    {
+      "id": 3,
+      "name": "面霜",
+      "imageUrl": "https://picsum.photos/seed/cream/100/100",
+      "sortOrder": 3
+    },
+    {
+      "id": 4,
+      "name": "面膜",
+      "imageUrl": "https://picsum.photos/seed/mask/100/100",
+      "sortOrder": 4
+    },
+    {
+      "id": 5,
+      "name": "彩妆",
+      "imageUrl": "https://picsum.photos/seed/makeup/100/100",
+      "sortOrder": 5
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "LANCOME",
+      "logoUrl": "https://picsum.photos/seed/lancome/200/80",
+      "sortOrder": 1
+    },
+    {
+      "id": 2,
+      "name": "SK-II",
+      "logoUrl": "https://picsum.photos/seed/skii/200/80",
+      "sortOrder": 2
+    },
+    {
+      "id": 3,
+      "name": "雅诗兰黛",
+      "logoUrl": "https://picsum.photos/seed/esteelauder/200/80",
+      "sortOrder": 3
+    },
+    {
+      "id": 4,
+      "name": "迪奥",
+      "logoUrl": "https://picsum.photos/seed/dior/200/80",
+      "sortOrder": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "水乳套装",
+      "brief": "补水保湿，滋润肌肤",
+      "brandName": "LANCOME",
+      "categoryId": 1,
+      "mainImage": "https://picsum.photos/seed/product1/400/400",
+      "images": [
+        "https://picsum.photos/seed/product1-1/400/400",
+        "https://picsum.photos/seed/product1-2/400/400",
+        "https://picsum.photos/seed/product1-3/400/400"
+      ],
+      "price": 599,
+      "originalPrice": 699,
+      "discount": "8.5",
+      "stock": 100,
+      "specs": [
+        {
+          "id": 1,
+          "name": "正装"
+        },
+        {
+          "id": 2,
+          "name": "小样"
+        }
+      ],
+      "detail": "<p>商品详情...</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "规格",
+          "value": "100ml+100ml"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "非常好用的产品",
+          "images": [
+            "https://picsum.photos/seed/review1-1/80/80",
+            "https://picsum.photos/seed/review1-2/80/80"
+          ],
+          "time": "2024-01-10T10:00:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "精华液",
+      "brief": "淡化细纹，提亮肤色",
+      "brandName": "SK-II",
+      "categoryId": 2,
+      "mainImage": "https://picsum.photos/seed/product2/400/400",
+      "images": [
+        "https://picsum.photos/seed/product2-1/400/400",
+        "https://picsum.photos/seed/product2-2/400/400"
+      ],
+      "price": 899,
+      "originalPrice": 999,
+      "discount": "9",
+      "stock": 50,
+      "specs": [
+        {
+          "id": 1,
+          "name": "30ml"
+        },
+        {
+          "id": 2,
+          "name": "50ml"
+        }
+      ],
+      "detail": "<p>商品详情...</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "日本"
+        },
+        {
+          "key": "规格",
+          "value": "50ml"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-02T00:00:00.000Z"
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1,
+      "quantity": 2,
+      "specId": 1,
+      "createTime": "2024-01-10T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "productName": "水乳套装",
+          "quantity": 2,
+          "specId": 1,
+          "specName": "正装",
+          "price": 599,
+          "image": "https://picsum.photos/seed/product1/400/400"
+        }
+      ],
+      "totalPrice": 1198,
+      "status": "pending",
+      "statusText": "待付款",
+      "createTime": "2024-01-10T00:00:00.000Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1,
+      "createTime": "2024-01-10T00:00:00.000Z"
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "张三",
+      "phone": "13800138000",
+      "province": "广东省",
+      "city": "深圳市",
+      "district": "南山区",
+      "detail": "科技园路100号",
+      "isDefault": true,
+      "createTime": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}

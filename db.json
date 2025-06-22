@@ -1,0 +1,1173 @@
+{
+  "addresses": [
+    {
+      "id": "1",
+      "userId": "1",
+      "name": "萧逸的萧小五",
+      "phone": "13800138000",
+      "province": "广东省",
+      "city": "深圳市",
+      "district": "南山区",
+      "detail": "科技园南路23号",
+      "isDefault": true,
+      "region": [
+        "广东省",
+        "深圳市",
+        "南山区"
+      ]
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "name": "李四",
+      "phone": "13900139000",
+      "province": "广东省",
+      "city": "深圳市",
+      "district": "福田区",
+      "detail": "中心公园路1号",
+      "isDefault": false,
+      "region": [
+        "广东省",
+        "深圳市",
+        "福田区"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "xy",
+      "password": "123456",
+      "email": "xyt@example.com",
+      "phone": "11122233344",
+      "avatar": "https://tse3-mm.cn.bing.net/th/id/OIP-C.iwMd5xkcMHgzEa19e0kJywHaHa?rs=1&pid=ImgDetMain",
+      "createTime": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": "1",
+      "title": "夏季特惠",
+      "description": "全场满200减50，限时特惠",
+      "imageUrl": "https://www.chanel.cn/puls-img/c_limit,w_2880/q_auto:good,dpr_auto,f_auto/1744097455114-chancehpcorpotakeoverwwdesktopjpg_1260x2880.jpg",
+      "link": "#",
+      "buttonText": "立即抢购",
+      "sortOrder": 1
+    },
+    {
+      "id": "2",
+      "title": "新品上市",
+      "description": "全新系列，焕新上市",
+      "imageUrl": "https://www.chanel.cn/puls-img/c_limit,w_3200/q_auto:good,dpr_auto,f_auto/1742562149976-homepagecorpoonedesktopjpg_3240x5760.jpg",
+      "link": "#",
+      "buttonText": "查看详情",
+      "sortOrder": 2
+    },
+    {
+      "id": "3",
+      "title": "经典卸妆",
+      "description": "温和卸妆，深层清洁",
+      "imageUrl": "https://res-wxec-unipt.lorealchina.com/ow1/ow-shu/banner/22.png",
+      "link": "#",
+      "buttonText": "立即购买",
+      "sortOrder": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "护肤水",
+      "imageUrl": "https://picsum.photos/seed/toner/100/100",
+      "sortOrder": 1
+    },
+    {
+      "id": "2",
+      "name": "精华液",
+      "imageUrl": "https://picsum.photos/seed/serum/100/100",
+      "sortOrder": 2
+    },
+    {
+      "id": "3",
+      "name": "面霜",
+      "imageUrl": "https://picsum.photos/seed/cream/100/100",
+      "sortOrder": 3
+    },
+    {
+      "id": "4",
+      "name": "面膜",
+      "imageUrl": "https://picsum.photos/seed/mask/100/100",
+      "sortOrder": 4
+    },
+    {
+      "id": "5",
+      "name": "彩妆",
+      "imageUrl": "https://picsum.photos/seed/makeup/100/100",
+      "sortOrder": 5
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "name": "LANCOME",
+      "logoUrl": "https://tse2-mm.cn.bing.net/th/id/OIP-C.sXg6aJDOkaSYDT73YkQp2AHaEK?rs=1&pid=ImgDetMain",
+      "sortOrder": 1
+    },
+    {
+      "id": "2",
+      "name": "SK-II",
+      "logoUrl": "https://tse1-mm.cn.bing.net/th/id/OIP-C.FKg7wGTMUCDPDFOYr5GVNQHaE8?rs=1&pid=ImgDetMain",
+      "sortOrder": 2
+    },
+    {
+      "id": "3",
+      "name": "雅诗兰黛",
+      "logoUrl": "https://tse1-mm.cn.bing.net/th/id/OIP-C.JPigcfUJ2U4sb0DBeC2MBgHaDt?rs=1&pid=ImgDetMain",
+      "sortOrder": 3
+    },
+    {
+      "id": "4",
+      "name": "迪奥",
+      "logoUrl": "https://www.logosj.com/wp-content/uploads/2018/12/5-1.jpg",
+      "sortOrder": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "水乳套装",
+      "brief": "补水保湿，滋润肌肤",
+      "brandName": "LANCOME",
+      "categoryId": 1,
+      "mainImage": "https://img.alicdn.com/i3/2360209412/O1CN01CdRLu72JOkiKhperD_!!2360209412.jpg",
+      "images": [
+        "https://img.alicdn.com/bao/uploaded/i4/2360209412/O1CN01ixO3642JOkfoVZLdx_!!0-item_pic.jpg"
+      ],
+      "price": 599,
+      "originalPrice": 699,
+      "discount": "8.5",
+      "stock": 99,
+      "specs": [
+        {
+          "id": 1,
+          "name": "正装"
+        },
+        {
+          "id": 2,
+          "name": "小样"
+        }
+      ],
+      "detail": "<p>商品详情...</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "规格",
+          "value": "100ml+100ml"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "非常好用的产品",
+          "images": [
+            "https://picsum.photos/seed/review1-1/80/80",
+            "https://picsum.photos/seed/review1-2/80/80"
+          ],
+          "time": "2024-01-10T10:00:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "name": "小灯泡",
+      "brief": "淡化细纹，提亮肤色",
+      "brandName": "SK-II",
+      "categoryId": 2,
+      "mainImage": "https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/83868/39/24952/66758/64ba4de1F1449899e/1e27f7095956161f.jpg!q80.dpg",
+      "images": [
+        "https://tse1-mm.cn.bing.net/th/id/OIP-C.IgNiU9-ddDkGWeoROx2Y3gHaHa?rs=1&pid=ImgDetMain"
+      ],
+      "price": 899,
+      "originalPrice": 999,
+      "discount": "9",
+      "stock": 50,
+      "specs": [
+        {
+          "id": 1,
+          "name": "30ml"
+        },
+        {
+          "id": 2,
+          "name": "50ml"
+        }
+      ],
+      "detail": "<p>商品详情...</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "日本"
+        },
+        {
+          "key": "规格",
+          "value": "50ml"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "name": "清滢柔肤水",
+      "brief": "温和清洁，二次补水",
+      "brandName": "LANCOME",
+      "categoryId": 1,
+      "mainImage": "https://image.ibb2b.com/productimage/2023/08/07/9e2bef7d-7063-44a4-8d60-8f5b9af6ea0b.jpg@0r_85Q_1e_1c_0l_400w_400h",
+      "images": [
+        "https://img.alicdn.com/i4/2209320321742/O1CN01hBUs4C1OjskYaju3Z_!!2209320321742.jpg"
+      ],
+      "price": 320,
+      "originalPrice": 380,
+      "discount": "8.4",
+      "stock": 148,
+      "specs": [
+        {
+          "id": 3,
+          "name": "200ml"
+        },
+        {
+          "id": 4,
+          "name": "400ml"
+        }
+      ],
+      "detail": "<p>温和配方，清洁肌肤残留污垢，同时为肌肤补充水分，使肌肤保持柔软光滑状态。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "所有肤质"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 2,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 4,
+          "content": "水很清爽，用完皮肤不紧绷，搭配乳液效果更好。",
+          "images": [
+            "https://tse3-mm.cn.bing.net/th/id/OIP-C.U1CAG1J3lIZIUgoeiyk5-gHaNK?rs=1&pid=ImgDetMain"
+          ],
+          "time": "2024-01-15T14:30:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-05T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "name": "护肤精华露（神仙水）",
+      "brief": "平衡水油，提亮肤色",
+      "brandName": "SK-II",
+      "categoryId": 2,
+      "mainImage": "https://ts1.tc.mm.bing.net/th/id/R-C.19c804831e1f8aef666b43b73e8c3f12?rik=LHoGri54pENuMA&riu=http%3a%2f%2fdada360com2016.oss-cn-qingdao.aliyuncs.com%2fjianbao%2fwebsite%2f2018%2f11%2f22%2f0aa2dd7f0b3b4d02aa427d1f611bd2ed.jpg&ehk=84Ge9isIKbmFkWUb2JO73sgK3HvaAPoaGOZdZKRqoi0%3d&risl=&pid=ImgRaw&r=0",
+      "images": [
+        "https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/165559/13/30629/71691/639437e2E441bd353/005f35c46a2247d3.jpg!q80.dpg"
+      ],
+      "price": 1599,
+      "originalPrice": 1799,
+      "discount": "8.9",
+      "stock": 30,
+      "specs": [
+        {
+          "id": 5,
+          "name": "75ml"
+        },
+        {
+          "id": 6,
+          "name": "160ml"
+        },
+        {
+          "id": 7,
+          "name": "230ml"
+        }
+      ],
+      "detail": "<p>蕴含90%以上PITERA™精华，调节肌肤代谢，改善肤质，使肌肤呈现透亮光泽。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "日本"
+        },
+        {
+          "key": "核心成分",
+          "value": "PITERA™精华"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "name": "特润修护肌活精华露-小棕瓶",
+      "brief": "抗老修护，细腻肌肤",
+      "brandName": "雅诗兰黛",
+      "categoryId": 2,
+      "mainImage": "https://imgservice.suning.cn/uimg1/b2c/tm/n4eGleVa8HciyWIscpWBFw.jpg_800w_800h_4e",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.uohzHMGOgbMMYyxsAY08awHaHq?o=7rm=3&rs=1&pid=ImgDetMain"
+      ],
+      "price": 1080,
+      "originalPrice": 1180,
+      "discount": "9.1",
+      "stock": 45,
+      "specs": [
+        {
+          "id": 8,
+          "name": "50ml"
+        },
+        {
+          "id": 9,
+          "name": "100ml"
+        }
+      ],
+      "detail": "<p>夜间密集修护，淡化细纹，增强肌肤屏障，使肌肤恢复弹润细腻。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "美国"
+        },
+        {
+          "key": "适用年龄",
+          "value": "25+"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 3,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "回购多次的精华，抗老效果明显，用完皮肤很稳定。",
+          "images": [
+            "https://tse3-mm.cn.bing.net/th/id/OIP-C.8npFmlb4B0zH56TDgPZ3WwHaHa?w=173&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+          ],
+          "time": "2024-01-20T09:10:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-07T00:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "name": "凝脂恒久气垫粉底",
+      "brief": "轻薄遮瑕，持久控油",
+      "brandName": "迪奥",
+      "categoryId": 5,
+      "mainImage": "https://tse4-mm.cn.bing.net/th/id/OIP-C.yI5l57v2zkFR7xZk4IQJrgHaHa?w=215&h=215&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse3-mm.cn.bing.net/th/id/OIP-C.3UNVS47y0yQRs_lvgWFN8QHaHa?w=171&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+        "https://tse1-mm.cn.bing.net/th/id/OIP-C.m3BqtRLRw0CNjzdyJAcjugAAAA?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 520,
+      "originalPrice": 590,
+      "discount": "8.8",
+      "stock": 80,
+      "specs": [
+        {
+          "id": 10,
+          "name": "0N（白皙色）"
+        },
+        {
+          "id": 11,
+          "name": "1N（自然色）"
+        },
+        {
+          "id": 12,
+          "name": "2N（健康色）"
+        }
+      ],
+      "detail": "<p>细腻粉质，打造哑光雾面妆效，持妆不脱妆，同时滋润肌肤不卡粉。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "防晒指数",
+          "value": "SPF50+/PA+++"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-08T00:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "name": "菁纯臻颜精萃乳霜",
+      "brief": "奢养抗老，紧致淡纹",
+      "brandName": "LANCOME",
+      "categoryId": 3,
+      "mainImage": "https://tse4-mm.cn.bing.net/th/id/OIP-C.CsgDKSBNsEbzLa2Xij65jwHaHa?w=211&h=211&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.O-iWQ6tEAYQkFcD6A5zbXAHaJ0?w=160&h=211&c=7&r=0&o=7&pid=1.7&rm=3",
+        "https://tse3-mm.cn.bing.net/th/id/OIP-C.ASaspvcnVYwBFBcoaj50fwHaJ5?w=141&h=188&c=7&r=0&o=7&pid=1.7&rm=3",
+        "https://tse1-mm.cn.bing.net/th/id/OIP-C.Qf_8pCG67oId8-eNdKTetgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 2680,
+      "originalPrice": 2880,
+      "discount": "9.3",
+      "stock": 15,
+      "specs": [
+        {
+          "id": 13,
+          "name": "60ml（滋润版）"
+        },
+        {
+          "id": 14,
+          "name": "60ml（清爽版）"
+        }
+      ],
+      "detail": "<p>蕴含玫瑰精萃与玻色因成分，深层滋养肌肤，淡化皱纹，提升肌肤紧致度。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "核心成分",
+          "value": "玫瑰精萃、玻色因"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-09T00:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "name": "前男友修护面膜",
+      "brief": "急救焕肤，密集修护",
+      "brandName": "SK-II",
+      "categoryId": 4,
+      "mainImage": "https://tse1-mm.cn.bing.net/th/id/OIP-C.8eNFXymbMBRD4M8xB3eOSgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse3-mm.cn.bing.net/th/id/OIP-C.IEL-jQU0-RzeyGki7dzqXQHaHa?w=151&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 760,
+      "originalPrice": 850,
+      "discount": "8.9",
+      "stock": 59,
+      "specs": [
+        {
+          "id": 15,
+          "name": "5片装"
+        },
+        {
+          "id": 16,
+          "name": "10片装"
+        }
+      ],
+      "detail": "<p>一片蕴含半瓶神仙水精华，即时改善肌肤暗沉、干燥，敷后肌肤透亮细腻。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "日本"
+        },
+        {
+          "key": "使用场景",
+          "value": "妆前急救、熬夜修护"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 4,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 4,
+          "content": "急救效果很好，熬夜后敷一片，第二天皮肤状态很稳定。",
+          "images": [
+            "https://tse3-mm.cn.bing.net/th/id/OIP-C.cyACNyJkoozHXIY8Dp2KRAAAAA?w=116&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+          ],
+          "time": "2024-01-25T16:45:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "name": "红石榴鲜活亮肤水",
+      "brief": "抗氧化，提亮肤色",
+      "brandName": "雅诗兰黛",
+      "categoryId": 1,
+      "mainImage": "https://tse3-mm.cn.bing.net/th/id/OIP-C.U5uDmUFdASDXu0wdiOWXtwHaHn?w=158&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse4-mm.cn.bing.net/th/id/OIP-C.nK1qsaTB5oUDz8SA8xHPhAAAAA?w=157&h=176&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 420,
+      "originalPrice": 480,
+      "discount": "8.8",
+      "stock": 90,
+      "specs": [
+        {
+          "id": 17,
+          "name": "200ml"
+        },
+        {
+          "id": 18,
+          "name": "400ml"
+        }
+      ],
+      "detail": "<p>蕴含红石榴精华，抗氧化提亮，改善暗沉，使肌肤焕发透亮光泽。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "美国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "暗沉肌肤"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 5,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 4,
+          "content": "水很滋润，用完皮肤透亮了很多，红石榴味道很好闻。",
+          "images": [],
+          "time": "2024-01-28T10:30:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-11T00:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "name": "花蜜活颜乳霜",
+      "brief": "滋润保湿，不油腻",
+      "brandName": "迪奥",
+      "categoryId": 3,
+      "mainImage": "https://tse1-mm.cn.bing.net/th/id/OIP-C.iUv7z4f9b-1lm6QZ9EWoKwHaHa?w=208&h=208&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse1-mm.cn.bing.net/th/id/OIP-C.r2WnFnQa-99jbFraTeQ4zQHaEr?w=270&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 799,
+      "originalPrice": 959,
+      "discount": "8.3",
+      "stock": 120,
+      "specs": [
+        {
+          "id": 19,
+          "name": "3支装"
+        },
+        {
+          "id": 20,
+          "name": "5支装"
+        }
+      ],
+      "detail": "<p>含多种植物精油，深度滋润双手，修复干燥裂纹，四季适用。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "香型",
+          "value": "小雏菊、玫瑰、薰衣草"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-12T00:00:00.000Z"
+    },
+    {
+      "id": "13",
+      "name": "雪绒花舒缓面膜",
+      "brief": "舒缓敏感，补水保湿",
+      "brandName": "LANCOME",
+      "categoryId": 4,
+      "mainImage": "https://tse1-mm.cn.bing.net/th/id/OIP-C.IizI0CKSQLrfVtPpOQlqywHaHa?w=189&h=189&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [],
+      "price": 360,
+      "originalPrice": 420,
+      "discount": "8.6",
+      "stock": 75,
+      "specs": [
+        {
+          "id": 21,
+          "name": "5片装"
+        },
+        {
+          "id": 22,
+          "name": "10片装"
+        }
+      ],
+      "detail": "<p>蕴含雪绒花提取物，舒缓敏感泛红，为肌肤补充水分，增强屏障功能。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "敏感肌"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 6,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "敏感期必备面膜，敷完皮肤很舒服，泛红明显改善。",
+          "images": [
+            "https://picsum.photos/seed/review6-1/80/80"
+          ],
+          "time": "2024-01-13T14:20:00.000Z"
+        }
+      ],
+      "createTime": "2024-01-13T00:00:00.000Z"
+    },
+    {
+      "id": "14",
+      "name": "持妆粉底液",
+      "brief": "长效持妆，无瑕遮瑕",
+      "brandName": "迪奥",
+      "categoryId": 5,
+      "mainImage": "https://tse4-mm.cn.bing.net/th/id/OIP-C.6--c4EjllkHKJ-5OQmrt9QAAAA?w=170&h=176&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "data:image/webp;base64,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"
+      ],
+      "price": 480,
+      "originalPrice": 550,
+      "discount": "8.7",
+      "stock": 60,
+      "specs": [
+        {
+          "id": 23,
+          "name": "010（瓷白色）"
+        },
+        {
+          "id": 24,
+          "name": "020（自然色）"
+        },
+        {
+          "id": 25,
+          "name": "030（小麦色）"
+        }
+      ],
+      "detail": "<p>哑光雾面妆效，24小时持妆不脱妆，遮盖力强，同时保湿不卡粉。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "防晒指数",
+          "value": "SPF35/PA++"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-01-14T00:00:00.000Z"
+    },
+    {
+      "id": "15",
+      "name": "YSL圣罗兰纯口红（小金条）",
+      "brief": "哑而不干，高饱和显色",
+      "brandName": "YSL",
+      "categoryId": 5,
+      "mainImage": "https://tse3-mm.cn.bing.net/th/id/OIP-C.afIiHdlhdv3mmzlxL3p2rQHaHa?w=205&h=205&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.3zhQueEmiL1UN15wqrS6lAHaHa?w=197&h=197&c=7&r=0&o=7&pid=1.7&rm=3",
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.k2FkahT_CXXpvJMQyAWR6QHaHa?w=199&h=199&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 350,
+      "originalPrice": 380,
+      "discount": "9.2",
+      "stock": 80,
+      "specs": [
+        {
+          "id": 58,
+          "name": "21#（复古红）"
+        },
+        {
+          "id": 59,
+          "name": "1966#（暖棕红）"
+        },
+        {
+          "id": 60,
+          "name": "107#（血浆红）"
+        }
+      ],
+      "detail": "<p>金属雾面质地，哑而不干，高饱和色泽持久锁色，搭配标志性小金条外壳，打造高级雾面唇妆。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "质地",
+          "value": "雾面哑光"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 21,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "21号色太绝了，复古红很显白，质地顺滑不拔干，包装也很有质感。",
+          "images": [
+            "https://tse3-mm.cn.bing.net/th/id/OIP-C.RZFBxprZ_7Pw8Vscqm_4kQHaJ3?w=142&h=190&c=7&r=0&o=7&pid=1.7&rm=3"
+          ],
+          "time": "2024-02-10T14:30:00.000Z"
+        }
+      ],
+      "createTime": "2024-02-05T00:00:00.000Z"
+    },
+    {
+      "id": "16",
+      "name": "YSL圣罗兰明彩粉底液",
+      "brief": "水光透亮，持妆不暗沉",
+      "brandName": "YSL",
+      "categoryId": 5,
+      "mainImage": "https://tse2-mm.cn.bing.net/th/id/OIP-C.2_8wnsgwlmba0engcZP44QAAAA?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse1-mm.cn.bing.net/th/id/OIP-C.BCJul9RUKiFHJJIBtQE71AAAAA?w=192&h=192&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 580,
+      "originalPrice": 650,
+      "discount": "8.9",
+      "stock": 60,
+      "specs": [
+        {
+          "id": 61,
+          "name": "B10（白皙冷调）"
+        },
+        {
+          "id": 62,
+          "name": "B20（自然冷调）"
+        },
+        {
+          "id": 63,
+          "name": "BR20（自然暖调）"
+        }
+      ],
+      "detail": "<p>蕴含水光精华，打造通透水光肌，持妆8小时不暗沉，遮瑕力中等，适合打造自然清透妆效。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "干性、中性肌肤"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-02-06T00:00:00.000Z"
+    },
+    {
+      "id": "17",
+      "name": "香奈儿邂逅清新淡香水",
+      "brief": "柑橘花香调，清新活力",
+      "brandName": "CHANEL",
+      "categoryId": 5,
+      "mainImage": "data:image/webp;base64,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",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.9H9nhvNNCtbv4V0dfrnbCQAAAA?w=157&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 850,
+      "originalPrice": 980,
+      "discount": "8.7",
+      "stock": 40,
+      "specs": [
+        {
+          "id": 64,
+          "name": "50ml"
+        },
+        {
+          "id": 65,
+          "name": "100ml"
+        }
+      ],
+      "detail": "<p>清新的柑橘与白麝香交织，搭配茉莉和粉红胡椒，打造活泼灵动的花香调，适合日常通勤和春夏季节。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "香调",
+          "value": "柑橘花香调"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 22,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 4,
+          "content": "味道很清新，柑橘调很适合夏天，留香时间中等，瓶身设计也很喜欢。",
+          "images": [],
+          "time": "2024-02-08T10:15:00.000Z"
+        }
+      ],
+      "createTime": "2024-02-07T00:00:00.000Z"
+    },
+    {
+      "id": "18",
+      "name": "香奈儿山茶花润泽乳霜",
+      "brief": "深层滋养，修护屏障",
+      "brandName": "CHANEL",
+      "categoryId": 3,
+      "mainImage": "https://tse4-mm.cn.bing.net/th/id/OIP-C.dujn7xAIizceNoEYPgkuCAHaHa?w=153&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse4-mm.cn.bing.net/th/id/OIP-C.4C-oXYLJRu3qZyoC6zMLtwHaFj?w=204&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 1580,
+      "originalPrice": 1720,
+      "discount": "9.2",
+      "stock": 30,
+      "specs": [
+        {
+          "id": 66,
+          "name": "50ml（滋润版）"
+        },
+        {
+          "id": 67,
+          "name": "50ml（清爽版）"
+        }
+      ],
+      "detail": "<p>蕴含山茶花提取物与蓝姜精华，深层滋润肌肤，修护屏障，质地轻盈易吸收，适合各种肤质。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "核心成分",
+          "value": "山茶花提取物、蓝姜精华"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-02-09T00:00:00.000Z"
+    },
+    {
+      "id": "19",
+      "name": "YSL圣罗兰夜皇后精华",
+      "brief": "夜间焕肤，提亮肤色",
+      "brandName": "YSL",
+      "categoryId": 2,
+      "mainImage": "https://tse3-mm.cn.bing.net/th/id/OIP-C.NfsjurLzJpKEv8mhsteg1wHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.exevfi5BlRO5iRdxlWd8JwHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 1280,
+      "originalPrice": 1420,
+      "discount": "9.0",
+      "stock": 50,
+      "specs": [
+        {
+          "id": 68,
+          "name": "30ml"
+        },
+        {
+          "id": 69,
+          "name": "50ml"
+        }
+      ],
+      "detail": "<p>蕴含摩洛哥黄金油与仙人掌花精萃，夜间深入修护肌肤，改善暗沉粗糙，次日肌肤透亮细腻。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "核心成分",
+          "value": "摩洛哥黄金油、仙人掌花精萃"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 23,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 5,
+          "content": "熬夜后用第二天皮肤状态超好，透亮不暗沉，质地轻薄好吸收，就是味道有点特别。",
+          "images": [],
+          "time": "2024-02-12T16:45:00.000Z"
+        }
+      ],
+      "createTime": "2024-02-10T00:00:00.000Z"
+    },
+    {
+      "id": "20",
+      "name": "香奈儿柔光持妆粉饼",
+      "brief": "定妆控油，柔焦遮瑕",
+      "brandName": "CHANEL",
+      "categoryId": 5,
+      "mainImage": "https://tse3-mm.cn.bing.net/th/id/OIP-C.0mUgIqYAmFewRMceLDIY9QHaJf?w=152&h=195&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.R4FXc9nGE5ouwfGbKO9G9wHaHa?w=195&h=195&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 560,
+      "originalPrice": 620,
+      "discount": "9.0",
+      "stock": 70,
+      "specs": [
+        {
+          "id": 70,
+          "name": "10#（白皙色）"
+        },
+        {
+          "id": 71,
+          "name": "20#（自然色）"
+        }
+      ],
+      "detail": "<p>细腻粉质，定妆同时控油，打造柔焦雾面妆效，补妆不卡粉，自带镜子和粉扑，方便携带。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "所有肤质"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-02-11T00:00:00.000Z"
+    },
+    {
+      "id": "21",
+      "name": "YSL圣罗兰恒颜无暇粉底液",
+      "brief": "高遮瑕，哑光持妆",
+      "brandName": "YSL",
+      "categoryId": 5,
+      "mainImage": "https://tse3-mm.cn.bing.net/th/id/OIP-C.FUZfBc5sptt14-h4vMVUMgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse2-mm.cn.bing.net/th/id/OIP-C.248UOtIM2cjP3sl03eKvrwAAAA?w=187&h=186&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 620,
+      "originalPrice": 680,
+      "discount": "9.1",
+      "stock": 55,
+      "specs": [
+        {
+          "id": 72,
+          "name": "B10（白皙冷调）"
+        },
+        {
+          "id": 73,
+          "name": "B20（自然冷调）"
+        },
+        {
+          "id": 74,
+          "name": "BD10（白皙暖调）"
+        }
+      ],
+      "detail": "<p>高遮瑕力配方，覆盖痘印、色斑等瑕疵，哑光雾面妆效，持妆12小时不脱妆，适合油性肌肤。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "适合肤质",
+          "value": "油性、混合性肌肤"
+        }
+      ],
+      "reviews": [],
+      "createTime": "2024-02-12T00:00:00.000Z"
+    },
+    {
+      "id": "22",
+      "name": "香奈儿可可小姐香水",
+      "brief": "东方花香调，优雅迷人",
+      "brandName": "CHANEL",
+      "categoryId": 5,
+      "mainImage": "https://tse1-mm.cn.bing.net/th/id/OIP-C.FpbAjecif0AVerTSouKSdAHaHa?w=190&h=190&c=7&r=0&o=7&pid=1.7&rm=3",
+      "images": [
+        "https://tse4-mm.cn.bing.net/th/id/OIP-C.rv3qR1wtXwRdo0dozzTBEwHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+        "https://tse4-mm.cn.bing.net/th/id/OIP-C.lSo0k5OqwGKaYcITldAVxwHaHa?w=197&h=197&c=7&r=0&o=7&pid=1.7&rm=3"
+      ],
+      "price": 1050,
+      "originalPrice": 1180,
+      "discount": "8.9",
+      "stock": 35,
+      "specs": [
+        {
+          "id": 75,
+          "name": "50ml"
+        },
+        {
+          "id": 76,
+          "name": "100ml"
+        }
+      ],
+      "detail": "<p>融合玫瑰、茉莉与广藿香，打造温暖迷人的东方花香调，留香持久，适合成熟女性日常及约会使用。</p>",
+      "params": [
+        {
+          "key": "产地",
+          "value": "法国"
+        },
+        {
+          "key": "香调",
+          "value": "东方花香调"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 24,
+          "userId": 1,
+          "userName": "用户1",
+          "userAvatar": "https://picsum.photos/seed/user1/40/40",
+          "rating": 4,
+          "content": "香味很高级，前调有点浓郁，中后调很好闻，留香时间很长，瓶子设计经典。",
+          "images": [],
+          "time": "2024-02-15T11:30:00.000Z"
+        }
+      ],
+      "createTime": "2024-02-13T00:00:00.000Z"
+    }
+  ],
+  "carts": [
+    {
+      "id": "47f0",
+      "userId": "1",
+      "productId": "9",
+      "quantity": 1,
+      "specId": 13,
+      "price": 2680,
+      "createTime": "2025-06-19T12:16:29.266Z"
+    },
+    {
+      "id": "9572",
+      "userId": "1",
+      "productId": "7",
+      "quantity": 1,
+      "specId": 8,
+      "price": 1080,
+      "createTime": "2025-06-20T03:17:30.453Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "0c3d",
+      "userId": "1",
+      "addressId": "1",
+      "items": [
+        {
+          "productId": "5",
+          "productName": "清滢柔肤水",
+          "quantity": 1,
+          "price": 320,
+          "specId": 3,
+          "specName": "200ml",
+          "image": "https://image.ibb2b.com/productimage/2023/08/07/9e2bef7d-7063-44a4-8d60-8f5b9af6ea0b.jpg@0r_85Q_1e_1c_0l_400w_400h"
+        }
+      ],
+      "totalPrice": 320,
+      "status": "paid",
+      "statusText": "待发货",
+      "createTime": "2025-06-19T13:45:47.762Z",
+      "payTime": "2025-06-19T13:45:47.762Z"
+    },
+    {
+      "id": "1ded",
+      "userId": "1",
+      "addressId": "1",
+      "items": [
+        {
+          "productId": "5",
+          "productName": "清滢柔肤水",
+          "quantity": 2,
+          "price": 320,
+          "specId": 3,
+          "specName": "200ml",
+          "image": "https://image.ibb2b.com/productimage/2023/08/07/9e2bef7d-7063-44a4-8d60-8f5b9af6ea0b.jpg@0r_85Q_1e_1c_0l_400w_400h"
+        }
+      ],
+      "totalPrice": 640,
+      "status": "paid",
+      "statusText": "待发货",
+      "createTime": "2025-06-20T01:20:56.153Z",
+      "payTime": "2025-06-20T01:20:56.153Z"
+    },
+    {
+      "id": "5190",
+      "userId": "1",
+      "addressId": "1",
+      "items": [
+        {
+          "productId": "1",
+          "productName": "水乳套装",
+          "quantity": 1,
+          "price": 599,
+          "specId": 1,
+          "specName": "正装",
+          "image": "https://img.alicdn.com/i3/2360209412/O1CN01CdRLu72JOkiKhperD_!!2360209412.jpg"
+        }
+      ],
+      "totalPrice": 599,
+      "status": "paid",
+      "statusText": "待发货",
+      "createTime": "2025-06-20T02:18:42.998Z",
+      "payTime": "2025-06-20T02:18:42.999Z"
+    },
+    {
+      "id": "4c8f",
+      "userId": "1",
+      "addressId": "1",
+      "items": [
+        {
+          "productId": "10",
+          "productName": "前男友修护面膜",
+          "quantity": 1,
+          "price": 760,
+          "specId": 16,
+          "specName": "10片装",
+          "image": "https://tse1-mm.cn.bing.net/th/id/OIP-C.8eNFXymbMBRD4M8xB3eOSgHaHa?w=202&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+          "cartId": "a8ec"
+        }
+      ],
+      "totalPrice": 760,
+      "status": "paid",
+      "statusText": "待发货",
+      "createTime": "2025-06-20T03:17:40.682Z",
+      "payTime": "2025-06-20T03:17:40.682Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "1",
+      "userId": 1,
+      "productId": 1,
+      "createTime": "2024-01-10T00:00:00.000Z"
+    },
+    {
+      "id": "7759",
+      "userId": "1",
+      "productId": "5",
+      "createTime": "2025-06-18T00:43:46.242Z"
+    },
+    {
+      "id": "e2c9",
+      "userId": "1",
+      "productId": "7",
+      "createTime": "2025-06-20T02:09:27.821Z"
+    }
+  ]
+}
