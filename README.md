@@ -33,3 +33,16 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## 前期准备
+
+### 1. 安装 JSON Server（全局安装一次即可）
+```sh
+npm install -g json-server
+```
+### 2. 启动JSON Server
+```sh
+npm run json:server
+```
+*在package.json里面已经配置"json:server": "json-server --watch db.json --port 3000"
+
