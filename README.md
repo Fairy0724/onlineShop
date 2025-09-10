@@ -44,5 +44,5 @@ npm install -g json-server
 ```sh
 npm run json:server
 ```
-*在package.json里面已经配置"json:server": "json-server --watch db.json --port 3000"
+* 在package.json里面已经配置"json:server": "json-server --watch db.json --port 3000"
 
