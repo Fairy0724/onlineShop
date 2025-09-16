@@ -1,37 +1,25 @@
 <template>
   <div id="layout">
-    <!-- 头部导航 -->
-    <!-- <header>
-      <div class="wrapper">
-        <nav>
-          <template v-if="userStore.isLogin">
-            <RouterLink :to="{name: 'cart'}">购物车</RouterLink>
-            <RouterLink to="/orders">订单</RouterLink>
-            <RouterLink to="/profile">个人中心</RouterLink>
-            <a @click="userStore.logout">退出登录</a>
-          </template>
-<template v-else>
-            <RouterLink to="/login">登录</RouterLink>
-            <RouterLink to="/register">注册</RouterLink>
-          </template>
-</nav>
-</div>
-</header> -->
     <!-- 主内容区域 -->
     <main>
-      <RouterView />
+      <!-- 使用Vue Router 4.x推荐的插槽语法实现keep-alive -->
+      <router-view v-slot="{ Component, route }">
+        <keep-alive :max="10">
+          <component :is="Component" v-if="route.meta.keepAlive" :key="route.fullPath" />
+        </keep-alive>
+        <!-- 不缓存的组件 -->
+        <component :is="Component" v-if="!route.meta.keepAlive" :key="route.fullPath" />
+      </router-view>
     </main>
   </div>
 </template>
 
 <script setup>
+import { RouterView } from 'vue-router'
+
 defineOptions({
   name: 'LayoutPage',
-});
-// import { RouterLink, RouterView } from 'vue-router';
-// import { useUserStore } from '../stores/userStore';
-
-// const userStore = useUserStore();
+})
 </script>
 
 <style scoped>
@@ -70,7 +58,6 @@ nav a:hover {
 main {
   flex: 1;
   width: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
   background: #fff;
   min-height: 800px;

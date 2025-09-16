@@ -126,7 +126,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue';
+import { ref, computed, onMounted, watch, onActivated, onDeactivated } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/userStore';
 import request from '../utils/http';
@@ -137,6 +137,9 @@ import '../assets/styles/nav.css';
 const router = useRouter();
 const userStore = useUserStore();
 const searchQuery = ref('');
+
+// 数据是否已加载的标志
+const dataLoaded = ref(false);
 
 // 处理搜索功能
 const handleSearch = () => {
@@ -342,16 +345,39 @@ watch(currentStatus, () => {
   fetchOrders();
 });
 
-// 组件挂载时初始化
-onMounted(async () => {
+// 初始化数据
+const initData = async () => {
   if (!userStore.isLogin) {
     router.push('/login');
     return;
   }
-  // 更新订单状态计数
-  await updateOrderCounts();
-  // 获取订单列表
-  fetchOrders();
+
+  if (!dataLoaded.value) {
+    // 更新订单状态计数
+    await updateOrderCounts();
+    // 获取订单列表
+    fetchOrders();
+    dataLoaded.value = true;
+  }
+};
+
+onMounted(async () => {
+  await initData();
+});
+
+// keep-alive 生命周期钩子
+onActivated(() => {
+  console.log('OrderView 被激活');
+  // 每次激活时刷新订单数据
+  if (userStore.isLogin) {
+    updateOrderCounts();
+    fetchOrders();
+  }
+});
+
+onDeactivated(() => {
+  console.log('OrderView 被停用');
+  // 可以在这里保存一些状态
 });
 </script>
 

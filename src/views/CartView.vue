@@ -120,7 +120,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onActivated, onDeactivated } from 'vue';
 import request from '../utils/http';
 import { useUserStore } from '../stores/userStore';
 import { useRouter } from 'vue-router';
@@ -137,6 +137,9 @@ const searchQuery = ref('');             // 搜索关键词
 const selectedCount = ref(0);            // 已选商品数量
 const selectedTotalPrice = ref(0);       // 已选商品总价
 const isAllSelected = ref(false);        // 全选状态
+
+// 数据是否已加载的标志
+const dataLoaded = ref(false);
 
 // 处理搜索功能
 const handleSearch = () => {
@@ -208,6 +211,7 @@ const fetchCartItems = async () => {
     // 更新购物车商品列表
     cartItems.value = cartItemsWithProducts;
     updateSelection();
+    dataLoaded.value = true;
   } catch (error) {
     console.error('获取购物车信息失败:', error);
     ElMessage.error('获取购物车信息失败');
@@ -285,13 +289,35 @@ const checkout = () => {
   });
 };
 
-// 组件挂载时初始化（检查登录状态并获取购物车数据）
-onMounted(() => {
+// 初始化数据
+const initData = async () => {
   if (!userStore.isLogin) {
     router.push('/login');
     return;
   }
-  fetchCartItems();
+
+  if (!dataLoaded.value) {
+    await fetchCartItems();
+  }
+};
+
+// 组件挂载时初始化
+onMounted(() => {
+  initData();
+});
+
+// keep-alive 生命周期钩子
+onActivated(() => {
+  console.log('CartView 被激活');
+  // 每次激活时刷新购物车数据，确保数据最新
+  if (userStore.isLogin) {
+    fetchCartItems();
+  }
+});
+
+onDeactivated(() => {
+  console.log('CartView 被停用');
+  // 可以在这里保存一些状态
 });
 </script>
 

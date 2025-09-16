@@ -88,7 +88,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch, onActivated, onDeactivated } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useUserStore } from '../stores/userStore';
 import request from '../utils/http';
@@ -103,6 +103,9 @@ const filteredProducts = ref([]); // 过滤后的商品列表
 const searchQuery = ref('');      // 搜索关键词
 const brandId = ref('');          // 品牌ID
 const brandName = ref('');        // 品牌名称
+
+// 数据是否已加载的标志
+const dataLoaded = ref(false);
 
 // 处理搜索逻辑
 const handleSearch = () => {
@@ -132,13 +135,14 @@ const fetchAndFilterProducts = async (query) => {
     } else {
       filteredProducts.value = brandProducts;
     }
+    dataLoaded.value = true;
   } catch (error) {
     filteredProducts.value = [];
     console.log(error)
   }
 };
 
-// 跳转到商品详情页
+// 跳转到商品详情
 const goToDetail = (productId) => {
   router.push({
     name: 'productDetail',
@@ -150,6 +154,13 @@ const goToDetail = (productId) => {
 const logout = async () => {
   await userStore.logout();
   router.push('/login');
+};
+
+// 初始化数据
+const initData = async () => {
+  brandId.value = route.query.brandId;
+  brandName.value = route.query.brandName;
+  await fetchAndFilterProducts('');
 };
 
 // 监听路由参数变化，更新品牌信息和商品列表
@@ -165,9 +176,26 @@ watch(
 
 // 组件挂载时初始化
 onMounted(async () => {
-  brandId.value = route.query.brandId;
-  brandName.value = route.query.brandName;
-  await fetchAndFilterProducts('');
+  await initData();
+});
+
+// keep-alive 生命周期钩子
+onActivated(() => {
+  console.log('BrandsView 被激活');
+  // 每次激活时检查是否需要重新加载数据
+  const newBrandId = route.query.brandId;
+  const newBrandName = route.query.brandName;
+
+  if (newBrandId !== brandId.value || newBrandName !== brandName.value) {
+    brandId.value = newBrandId;
+    brandName.value = newBrandName;
+    fetchAndFilterProducts('');
+  }
+});
+
+onDeactivated(() => {
+  console.log('BrandsView 被停用');
+  // 可以在这里保存搜索状态
 });
 </script>
 

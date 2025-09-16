@@ -59,7 +59,7 @@
       </div>
 
       <!-- 右侧内容区 -->
-      <div class="profile-content"> 
+      <div class="profile-content">
         <!-- 基本信息 -->
         <div v-if="currentMenu === 'basic'" class="content-card">
           <div class="card-header">
@@ -99,7 +99,7 @@
               <span class="info-value">{{ formatDate(userStore.userInfo?.createTime) }}</span>
             </div>
           </div>
-        </div> 
+        </div>
         <!-- 收货地址 -->
         <div v-if="currentMenu === 'address'" class="content-card">
           <div class="card-header">
@@ -155,7 +155,7 @@
                 <div class="price">
                   <span class="current-price">¥{{ item.product.price }}</span>
                   <span v-if="item.product.originalPrice" class="original-price">¥{{ item.product.originalPrice
-                  }}</span>
+                    }}</span>
                 </div>
                 <div class="actions">
                   <button class="btn-heart" @click.stop="removeFavorite(item.id)">
@@ -253,7 +253,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch, onActivated, onDeactivated } from 'vue';
 import { useRouter } from 'vue-router';
 import { useUserStore } from '../stores/userStore';
 import request from '../utils/http';
@@ -266,6 +266,9 @@ const currentMenu = ref('basic');
 const addresses = ref([]);
 const showAddress = ref(false);
 const editMode = ref(false);
+
+// 数据是否已加载的标志
+const dataLoaded = ref(false);
 
 // 用户编辑表单
 const userForm = ref({
@@ -412,7 +415,7 @@ const saveAddress = async () => {
 // 获取收藏列表
 const fetchFavorites = async () => {
   try {
-    if (!userStore.userInfo?.id) 
+    if (!userStore.userInfo?.id)
       return;
     const res = await request.get('/favorites', {
       params: { userId: userStore.userInfo.id }
@@ -478,7 +481,7 @@ const saveUserInfo = async () => {
       ...userStore.userInfo,
       ...userForm.value
     });
-  
+
     editMode.value = false;
     ElMessage.success('保存成功');
   } catch (error) {
@@ -593,14 +596,36 @@ const handleAvatarChange = async (e) => {
   reader.readAsDataURL(file);
 };
 
-// 当组件挂载时初始化数据
-onMounted(async () => {
+// 初始化数据
+const initData = async () => {
   if (userStore.isLogin && userStore.userInfo) {
-    await Promise.all([
-      fetchAddresses(),
-      fetchFavorites()
-    ]);
+    if (!dataLoaded.value) {
+      await Promise.all([
+        fetchAddresses(),
+        fetchFavorites()
+      ]);
+      dataLoaded.value = true;
+    }
   }
+};
+
+onMounted(async () => {
+  await initData();
+});
+
+// keep-alive 生命周期钩子
+onActivated(() => {
+  console.log('ProfileView 被激活');
+  // 每次激活时刷新用户数据
+  if (userStore.isLogin && userStore.userInfo) {
+    fetchAddresses();
+    fetchFavorites();
+  }
+});
+
+onDeactivated(() => {
+  console.log('ProfileView 被停用');
+  // 可以在这里保存一些状态
 });
 </script>
 

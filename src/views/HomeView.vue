@@ -144,7 +144,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
+import { ref, computed, onMounted, onUnmounted, watch, onActivated, onDeactivated } from 'vue';
 import request from '../utils/http';
 import { useRouter, RouterLink } from 'vue-router';
 import { useUserStore } from '../stores/userStore';
@@ -169,6 +169,9 @@ let intervalId;
 
 // 分类相关
 const selectedCategory = ref(null);
+
+// 数据是否已加载的标志
+const dataLoaded = ref(false);
 
 // 计算总页数
 const totalPages = computed(() => {
@@ -226,7 +229,7 @@ const fetchCartCount = async () => {
   }
 
   try {
-  // 检查用户是否登录
+    // 检查用户是否登录
     if (userStore.userInfo && userStore.userInfo.id) {
       const res = await request.get('/carts', {
         params: { userId: userStore.userInfo.id }
@@ -336,19 +339,27 @@ const goToBrand = (brand) => {
   });
 };
 
-onMounted(async () => {
-  await Promise.all([
-    fetchBanners(),
-    fetchCategories(),
-    fetchProducts(),
-    fetchBrands()
-  ]);
-  intervalId = setInterval(nextSlide, 5000);
+// 初始化数据
+const initData = async () => {
+  if (!dataLoaded.value) {
+    await Promise.all([
+      fetchBanners(),
+      fetchCategories(),
+      fetchProducts(),
+      fetchBrands()
+    ]);
+    dataLoaded.value = true;
+  }
 
   // 获取购物车数量
   if (userStore.isLogin) {
     fetchCartCount();
   }
+};
+
+onMounted(async () => {
+  await initData();
+  intervalId = setInterval(nextSlide, 5000);
 
   // 监听登录状态变化
   watch(() => userStore.isLogin, (isLogin) => {
@@ -361,6 +372,23 @@ onMounted(async () => {
 });
 
 onUnmounted(() => {
+  clearInterval(intervalId);
+});
+
+// keep-alive 生命周期钩子
+onActivated(() => {
+  console.log('HomeView 被激活');
+  // 重新启动轮播图定时器
+  intervalId = setInterval(nextSlide, 5000);
+  // 刷新购物车数量
+  if (userStore.isLogin) {
+    fetchCartCount();
+  }
+});
+
+onDeactivated(() => {
+  console.log('HomeView 被停用');
+  // 清除轮播图定时器
   clearInterval(intervalId);
 });
 </script>
